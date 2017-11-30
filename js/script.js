@@ -9,16 +9,18 @@ $(function () {
                 $('#portfolio').append(row1);
                 for(var key in data){
                     var item = data[key];
-                        var portfolioPics = $('<div class="col-xs-12 col-sm-6 col-md-3 pictures">');
-                        var imgContainer = $('<div class="mix imgContainer">');
+                        var portfolioPics = $('<div class="col-xs-12 col-sm-6 col-md-3 mix pictures">');
+                        var imgContainer = $('<div class="imgContainer">');
                         if(item.category=='art'){
-                            imgContainer.addClass('art');
-                        }else if(item.category=='interface'){
-                            imgContainer.addClass('interface');
-                        }else if(item.category=='code'){
-                            imgContainer.addClass('code');
-                        }else{
-                            imgContainer.addClass('programming');
+                            portfolioPics.addClass('art');
+                        }else if (item.category != 'interface') {
+                            if (item.category == 'code') {
+                                portfolioPics.addClass('code');
+                            } else {
+                                portfolioPics.addClass('programming');
+                            }
+                        } else {
+                            portfolioPics.addClass('interface');
                         }
                         var hoverText = $('<div class="imgHover">');
                         var catecory = $('<h4>'+item.category+'</h4>');
@@ -66,6 +68,24 @@ $(function () {
 			}
         }
     })
+    $( function() {
+        var state = true;
+        $( ".explore" ).on( "click", function() {
+            if ( state ) {
+                $('#effect').removeClass('noShow');
+                $( "#effect" ).animate({
+                    backgroundColor: "#FFE600",
+                    color:"black"
+                }, 1000 );
+            } else {
+                $( "#effect" ).animate({
+                    backgroundColor: "#89898b",
+                    color: "transparent"
+                }, 1000 );
+            }
+            state = !state;
+        });
+    } );
 	$('form').on('submit', function (e) {
         cleanError();
 		e.preventDefault();

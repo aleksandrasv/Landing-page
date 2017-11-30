@@ -22,6 +22,12 @@ header h2{
         font-size: 15px;
     }
 }
+#effect{
+    margin-top: 10px;
+    height: 150px;
+    width: 100%;
+    padding-top: 20px;
+}
 .explore{
 	background-color: transparent;
 	border:1px solid;
@@ -32,7 +38,7 @@ header h2{
 }
 .headerinfo{
 	padding-top: 254px;
-	padding-bottom: 254px;
+	padding-bottom: 3em;
 }
 header a{
 	color: #ffffff;

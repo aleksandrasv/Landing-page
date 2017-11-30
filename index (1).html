@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/mixitup.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/script.js"></script>
@@ -16,15 +15,11 @@
 <body>
 	<main>
 		<header class="container-fluid">
-			<div class="headerinfo">
+			<div class="headerinfo container">
 				<img class="moon" src="img/yellowMoon.png">
 				<h2>Wellome to the yellow side of the moon</h2>
 				<h1 class="weDo">We do some creative stuff</h1>
-				<button class="explore ui-state-default ui-corner-all">Explore</button>
-                <div class="ui-widget-content ui-corner-all noShow" id="effect">
-                    <h3 class="ui-widget-header ui-corner-all ">OK. Look at this </h3>
-                    <p class="">Simple Animation just for fun and make the button work</p>
-                </div>
+				<a href="#"><button class="explore">Explore</button></a>
 			</div>
 		</header>
 		<section class="nagitationBar container">
@@ -79,7 +74,7 @@
 				<h2>NO WE ARE NOT LAZY EVERY WEBCITE GOTTA HAVE EMPTY SPACE</h2>
 			</div>
 		</section>
-		<section id='portfolio' class="container">
+		<section id='portfolio' class="container last-page">
 			<div class="container-fluid head">
 				<h1>PORTFOLIO</h1>
 				<h2>WHEN WE ARE BORED WE DO SOME OF THIS STUFF</h2>
@@ -145,18 +140,18 @@
 						</div>
 					</div>
 				</div>
-				<div class='col-xs-12 col-sm-6 col-md-3 pictures'>
+				<div class='col-xs-12 col-sm-6 col-md-3 mix art pictures'>
 					<div class="imgContainer">
-						<img src="img/portfolio.png" class="mix art img-responsive">
+						<img src="img/portfolio.png" class="img-responsive">
 						<div class="imgHover">
 							<h4>WARNING</h4>
 							<h5>SHOOKING GOOD ART</h5>
 						</div>
 					</div>
 				</div>
-				<div class='col-xs-12 col-sm-6 col-md-3 pictures'>
+				<div class='col-xs-12 col-sm-6 col-md-3 mix code pictures'>
 					<div class="imgContainer">
-						<img src="img/portfolio.png" class="mix img-responsive code">
+						<img src="img/portfolio.png" class="img-responsive">
 						<div class="imgHover">
 							<h4>WARNING</h4>
 							<h5>SHOOKING GOOD ART</h5>
@@ -164,7 +159,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid">
+			<div class="container-fluid" >
 				<h2>OH...WE HAVE MORE OF THIS</h2>
   					<span class="fa fa-angle-down extendedPortfolio" id="more"></span>
 			</div>
